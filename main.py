@@ -4,7 +4,6 @@ from firestore import FirestoreConfig
 from skills_service import Skills_Service
 
 firestore_config = FirestoreConfig()
-
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
