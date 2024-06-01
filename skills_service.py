@@ -1,8 +1,6 @@
 import pandas as pd
 from pytrends.request import TrendReq
-import matplotlib.pyplot as plt
 from scipy.stats import linregress
-import os
 
 class Skills_Service:
 
