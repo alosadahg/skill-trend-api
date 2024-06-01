@@ -37,12 +37,10 @@ class Skills_Service:
         demand_std = yearly_table['skillFrequency'].std()
         if demand_std < 10:
             trend = 'Stable Demand'
-        elif slope > 0 and demand_std > 20:
-            trend = 'Emerging Skill'
         elif slope < 0:
-            trend = 'Downward Trend'
+            trend = 'Rising Demand'
         elif slope > 0:
-            trend = 'Upward Trend'
+            trend = 'Decreasing Demand'
 
         avg_demand_change = yearly_table['demandChange'].mean()
 
