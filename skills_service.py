@@ -44,7 +44,7 @@ class Skills_Service:
 
         avg_demand_change = yearly_table['demandChange'].mean()
 
-        returnMsg['prediction'] = trend
+        returnMsg['trend'] = trend
         returnMsg['avg_demand_change'] = avg_demand_change
         returnMsg['yearly_data'] = yearly_data_dict
 
