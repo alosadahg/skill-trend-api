@@ -38,9 +38,9 @@ class Skills_Service:
         if demand_std < 10:
             trend = 'Stable Demand'
         elif slope < 0:
-            trend = 'Rising Demand'
-        elif slope > 0:
             trend = 'Decreasing Demand'
+        elif slope > 0:
+            trend = 'Rising Demand'
 
         avg_demand_change = yearly_table['demandChange'].mean()
 
