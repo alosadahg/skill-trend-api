@@ -36,7 +36,7 @@ class Skills_Service:
         trend = ''
         demand_std = yearly_table['skillFrequency'].std()
         if demand_std < 10:
-            trend = 'Stable Demand'
+            trend = 'Steady Demand'
         elif slope < 0:
             trend = 'Decreasing Demand'
         elif slope > 0:
